@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Tencent.AlloyTeam.Weberpan" />
+	<meta name="copyright" content="Tencent.AlloyTeam" />
+	<meta name="keywords" content="腾讯 Alloy 团队" />
+	<meta name="description" content="Tencent.AlloyTeam" />
+
+	<title>Jx拾色器</title>
+	<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="./css/bootstrap-colorpicker.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+	<input type="text" class="input-medium" id="color1" value="rgba(0,0,0,.2)" style="margin:50px 0 0 50px" />
+
+	<script out="js/jx.all.js" src="./js/jx.core.js"></script>
+	<script out="js/jx.all.js" src="./js/jx.base.js"></script>
+	<script out="js/jx.all.js" src="./js/jx.dom.js"></script>
+	<script out="js/jx.all.js" src="./js/jx.browser.js"></script>
+	<script out="js/jx.all.js" src="./js/jx.event.js"></script>
+	<script out="js/jx.all.js" src="./js/jx.mini.js"></script>
+	<script type="text/javascript" src="./js/jx.ui.colorpicker.js"></script>
+	<script type="text/javascript">
+
+		var J = new Jx();
+		var cp = new J.ui.ColorPicker( J.dom.id('color1'), 'rgba' );
+
+	</script>
+</body>
+</html>
